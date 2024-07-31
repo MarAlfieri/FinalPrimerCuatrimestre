@@ -1,4 +1,4 @@
-﻿/* Estilos generales */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,7 +14,6 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-   
 }
 
 .encabezado {
@@ -110,7 +109,11 @@ section p {
     justify-content: space-around;
     align-items: left;
     width: 100%;
-    padding: 20px;   
+    padding-right: 100px;
+}
+/*agregado al titulo formulario de contacto*/
+.centrado{
+    text-align: center;
 }
 /*boton enviar*/
 .boton {
