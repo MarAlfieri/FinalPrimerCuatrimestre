@@ -1,8 +1,8 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     background-color: #f0f0f0;
 }
 
@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f1f1f1;
+    color: #8964a7;
 }
 
 .ordenar {
@@ -77,6 +77,10 @@ section p {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+}
+.producto img:hover{
+    border-style:solid;
+    border-color: #8964a7;
 }
 .tarjeta {
     display:inline;
