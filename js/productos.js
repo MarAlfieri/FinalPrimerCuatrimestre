@@ -28,7 +28,7 @@ function verificarStock(){
     let stockOk=true; //variable para validar 
     let contador=0; //Indice para manejar arreglos predefinidos
     entradas.forEach(input => {
-        let cantidad=Number(input.value);
+        let cantidad=Number(parseInt(input.value));
         if(stock[contador]>=cantidad) {
             unidadesCompradas+=Number(input.value);
         } else {
@@ -37,7 +37,7 @@ function verificarStock(){
         }    
         contador++;
     })
-    if (unidadesCompradas==0){
+    if (unidadesCompradas<=0){
         stockOk= false; //si la cantidad de productos seleccionados es 0
     }
     return stockOk;
