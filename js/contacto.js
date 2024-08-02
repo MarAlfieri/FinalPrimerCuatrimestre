@@ -2,7 +2,6 @@
 let entradas = document.querySelectorAll("input,textarea");
 //Arreglo para almacenar los "Value" de los "input"
 let contacto = [];
-let grabar= true; //Variable para habilitar grabación de datos
 //Verifico los click del boton
 document.getElementById("enviar").addEventListener("click", (e) => {
     //Si no se cumplen con las condiciones de validación, no crea el archivo
