@@ -51,8 +51,9 @@ function comprar(cantidad,i){
 
 function mostrarCompra(){
     document.getElementById("sumatotal").innerText="TOTAL A PAGAR $ "+totalCompra;
+    //Desactivo botón <Guardar Compra>
     document.querySelector("#total").disabled=true;
-    document.querySelector("#total").classList.toggle("desactivar");
+    document.querySelector("#total").className = "boton desactivar";
     alert("!!Gracias por su compra!!. Total a pagar $ "+totalCompra);
     contador=0;
     let articulos=document.querySelectorAll("#contproducto p, #contproducto img");
@@ -87,8 +88,9 @@ document.querySelector("#total").addEventListener("click",()=>{
 
 //Botón de nueva compra que limpia contenido y actualiza stock de pantalla
 document.querySelector("#borrar").addEventListener("click",()=>{
+     //Activo Botón <Guardar Compra>
      document.querySelector("#total").disabled=false;
-     document.querySelector("#total").classList.toggle("desactivar");
+     document.querySelector("#total").className = "boton";
      totalCompra=0;         
      document.getElementById("sumatotal").innerText="TOTAL A PAGAR $ "+totalCompra;
      document.querySelectorAll("div input").forEach(input => {
