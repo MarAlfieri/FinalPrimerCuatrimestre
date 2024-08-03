@@ -148,3 +148,7 @@ footer {
     height: 100%;
     width: 100%;  
 }
+/*Cambia colores del boton Guardar Compra*/
+.desactivar{
+    background-color: #adaaaa;
+}
